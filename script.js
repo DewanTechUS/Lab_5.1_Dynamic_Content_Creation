@@ -44,4 +44,6 @@ function addProduct() { // main function
   item.className = "cart-item";
   item.dataset.price = price;
   item.innerHTML = name + " — $" + price.toFixed(2); // toFixed(2) method to format number to 2 decimal places
-
+// Create remove button
+  const removeBtn = document.createElement("button");
+  removeBtn.textContent = "Remove";
