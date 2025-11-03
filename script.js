@@ -19,4 +19,10 @@ function removeItem(event) {
   updateTotalPrice(-price);
   item.remove();
 }
-  
+
+// Add a product to the cart // main function 
+// ref: mdn web docs // https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+// Add a product to the cart
+function addProduct() { // main function
+  const name = productNameInput.value; // get product name
+  const price = Number(productPriceInput.value); // convert string to number
