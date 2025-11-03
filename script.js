@@ -43,3 +43,5 @@ function addProduct() { // main function
   const item = document.createElement("li");
   item.className = "cart-item";
   item.dataset.price = price;
+  item.innerHTML = name + " — $" + price.toFixed(2); // toFixed(2) method to format number to 2 decimal places
+
