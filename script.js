@@ -26,3 +26,8 @@ function removeItem(event) {
 function addProduct() { // main function
   const name = productNameInput.value; // get product name
   const price = Number(productPriceInput.value); // convert string to number
+  //
+  if (name === "") {
+    alert("Put product name");
+    return;
+  }
