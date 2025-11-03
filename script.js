@@ -26,13 +26,16 @@ function removeItem(event) {
 function addProduct() { // main function
   const name = productNameInput.value; // get product name
   const price = Number(productPriceInput.value); // convert string to number
-  //
+  // input validation // if name is empty string or price is not a number
+  // we alert the user and return early// return
+  //https://www.shecodes.io/athena/549-how-to-use-an-alert-prompt-with-the-if-statement-in-javascript
+  // https://stackoverflow.com/questions/24449471/javascript-alert-when-customer-fill-in-the-wrong-price
   if (name === "") {
     alert("Put product name");
     return;
   }
+  // price validation // if price is NaN or less than or equal to 0
   if (!price) {
-    alert("Please enter a valid price.");
+    alert("Need a valid price.");
     return;
   }
-}
