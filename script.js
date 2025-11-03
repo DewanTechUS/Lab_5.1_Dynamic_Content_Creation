@@ -48,3 +48,10 @@ function addProduct() { // main function
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
 item.appendChild(removeBtn);
+// 
+  cart.appendChild(item);
+  updateTotalPrice(price);
+  productNameInput.value = "";
+  productPriceInput.value = "";
+  productNameInput.focus();
+}
