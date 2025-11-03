@@ -47,3 +47,4 @@ function addProduct() { // main function
 // Create remove button
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
+item.appendChild(removeBtn);
