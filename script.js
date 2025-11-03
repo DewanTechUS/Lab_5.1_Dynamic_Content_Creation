@@ -31,3 +31,8 @@ function addProduct() { // main function
     alert("Put product name");
     return;
   }
+  if (!price) {
+    alert("Please enter a valid price.");
+    return;
+  }
+}
