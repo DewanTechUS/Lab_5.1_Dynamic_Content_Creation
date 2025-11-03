@@ -39,3 +39,7 @@ function addProduct() { // main function
     alert("Need a valid price.");
     return;
   }
+  // Create list item // li element// ref : mdn web docs // https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+  const item = document.createElement("li");
+  item.className = "cart-item";
+  item.dataset.price = price;
