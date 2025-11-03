@@ -55,3 +55,6 @@ item.appendChild(removeBtn);
   productPriceInput.value = "";
   productNameInput.focus();
 }
+// When user clicks "Add Product" button // we call addProduct function // ref: mdn web docs // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/onclick
+addProductButton.onclick = addProduct;
+// When user clicks "Remove" button // we call removeItem function
