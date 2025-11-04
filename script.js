@@ -49,11 +49,13 @@ function addProduct() { // main function
   removeBtn.textContent = "Remove";
 item.appendChild(removeBtn);
 // 
-  cart.appendChild(item);
-  updateTotalPrice(price);
-  productNameInput.value = "";
-  productPriceInput.value = "";
-  productNameInput.focus();
+  cart.appendChild(item); // add item to cart
+  updateTotalPrice(price); // update total price
+  productNameInput.value = ""; // clear input fields
+  productPriceInput.value = ""; // clear input fields
+  productNameInput.focus();// set focus back to product name input
+  // When user clicks "Remove" button // we call removeItem function
+  removeBtn.onclick = removeItem;
 }
 // When user clicks "Add Product" button // we call addProduct function // ref: mdn web docs // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/onclick
 addProductButton.onclick = addProduct;
